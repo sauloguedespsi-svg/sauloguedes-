@@ -1,19 +1,18 @@
-const CACHE = 'saulo-guedes-pwa-v1';
-const FILES = [
+const CACHE = 'saulo-guedes-cartao-v3';
+const ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './manifest.webmanifest',
   './saulo-guedes.vcf',
-  './assets/saulo-guedes.jpg',
-  './assets/logo-sg.png',
+  './assets/cartao-saulo-guedes.png',
   './assets/icon-192.png',
   './assets/icon-512.png'
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
   self.skipWaiting();
 });
 

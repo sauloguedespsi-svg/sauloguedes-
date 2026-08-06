@@ -2,10 +2,11 @@
   "name": "Saulo Guedes | Psicanalista",
   "short_name": "Saulo Guedes",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0c1b3a",
-  "theme_color": "#0c1b3a",
-  "description": "Cartão profissional de Saulo Guedes, Psicanalista Clínico.",
+  "background_color": "#051425",
+  "theme_color": "#051425",
+  "description": "Cartão digital profissional de Saulo Guedes, Psicanalista Clínico.",
   "icons": [
     {
       "src": "assets/icon-192.png",

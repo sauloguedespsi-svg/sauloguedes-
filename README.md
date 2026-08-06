@@ -1,32 +1,28 @@
-# Cartão Digital PWA — Saulo Guedes
+# Site final — Saulo Guedes
 
-Este pacote contém um cartão digital instalável no celular, com:
+## O que está funcional
 
-- WhatsApp
-- Agendamento pelo Google Agenda
+- WhatsApp com mensagem pronta
+- Agendamento no Google Agenda
 - Instagram
 - E-mail
 - Download do contato `.vcf`
-- Compartilhamento do link
+- Compartilhamento pelo celular
 - Instalação como aplicativo
-- Funcionamento básico offline após a primeira abertura
+- Funcionamento offline básico após a primeira abertura
 
-## Publicar gratuitamente no GitHub Pages
+## Como atualizar no GitHub
 
-1. Crie uma conta gratuita no GitHub, caso ainda não tenha.
-2. Crie um repositório público, por exemplo: `saulo-guedes-cartao`.
-3. Envie todos os arquivos desta pasta para a raiz do repositório.
-4. No repositório, abra **Settings → Pages**.
-5. Em **Build and deployment**, selecione **Deploy from a branch**.
-6. Escolha a branch `main` e a pasta `/root`.
-7. Salve e aguarde o endereço publicado.
+1. Descompacte este ZIP.
+2. Abra o repositório atual no GitHub.
+3. Entre em **Add file → Upload files**.
+4. Envie todos os arquivos e a pasta `assets`.
+5. Quando o GitHub perguntar sobre arquivos com o mesmo nome, mantenha os novos.
+6. Clique em **Commit changes**.
+7. Aguarde de 1 a 3 minutos e atualize o endereço já publicado.
 
-O endereço costuma ficar assim:
+O endereço do GitHub Pages não muda.
 
-`https://SEU-USUARIO.github.io/saulo-guedes-cartao/`
+## Atenção
 
-Depois da publicação, gere um único QR Code apontando para esse endereço.
-
-## Atualizações futuras
-
-Você pode alterar telefone, links, textos ou imagens sem trocar o QR Code, desde que mantenha o mesmo endereço publicado.
+Não envie o ZIP fechado ao repositório. Envie o conteúdo descompactado, com `index.html` na raiz.
