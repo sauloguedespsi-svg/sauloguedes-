@@ -6,59 +6,70 @@
   <meta name="theme-color" content="#051425">
   <meta name="description" content="Cartão digital de Saulo Guedes, Psicanalista Clínico.">
   <meta property="og:title" content="Saulo Guedes | Psicanalista Clínico">
-  <meta property="og:description" content="Acesse WhatsApp, agendamento, Instagram, e-mail e salve o contato.">
-  <meta property="og:image" content="assets/cartao-saulo-guedes.png">
+  <meta property="og:description" content="WhatsApp, agendamento, Instagram, e-mail e contato em um só lugar.">
+  <meta property="og:image" content="assets/cartao-saulo-guedes.png?v=5">
   <title>Saulo Guedes | Psicanalista Clínico</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="assets/icon-192.png">
-  <link rel="apple-touch-icon" href="assets/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest?v=5">
+  <link rel="icon" href="assets/icon-192.png?v=5">
+  <link rel="apple-touch-icon" href="assets/icon-192.png?v=5">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <main class="page">
     <section class="card" aria-label="Cartão digital de Saulo Guedes">
-      <img
-        class="art"
-        src="assets/cartao-saulo-guedes.png"
-        alt="Saulo Guedes, Psicanalista. Cartão digital com botões de contato."
-        width="1152"
-        height="2048"
-      >
+      <svg class="interactive-card" viewBox="0 0 1152 2048"
+           role="img" aria-labelledby="cardTitle cardDescription"
+           xmlns="http://www.w3.org/2000/svg">
+        <title id="cardTitle">Cartão digital de Saulo Guedes</title>
+        <desc id="cardDescription">Cartão com botões de contato e agendamento.</desc>
 
-      <a class="hotspot whatsapp"
-         href="https://wa.me/5535991077513?text=Olá%2C%20Saulo.%20Gostaria%20de%20informações%20sobre%20o%20atendimento%20psicanalítico."
-         target="_blank" rel="noopener"
-         aria-label="Abrir conversa com Saulo no WhatsApp"></a>
+        <image href="assets/cartao-saulo-guedes.png?v=5"
+               x="0" y="0" width="1152" height="2048"
+               preserveAspectRatio="xMidYMid meet"/>
 
-      <a class="hotspot schedule"
-         href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2gSbg1XrwTjU-n1tbXFe_-Ctlwc30Ak14sKY_OWAcS-xMU_9s-qMX90j6_3VvP-8RtszXYEaec"
-         target="_blank" rel="noopener"
-         aria-label="Agendar consulta"></a>
+        <a href="https://wa.me/5535991077513?text=Olá%2C%20Saulo.%20Gostaria%20de%20informações%20sobre%20o%20atendimento%20psicanalítico."
+           target="_blank" rel="noopener"
+           aria-label="Abrir conversa com Saulo no WhatsApp">
+          <rect class="touch-area" x="61" y="910" width="501" height="190" rx="28"/>
+        </a>
 
-      <a class="hotspot instagram"
-         href="https://www.instagram.com/saulo.psicanalista/"
-         target="_blank" rel="noopener"
-         aria-label="Abrir Instagram de Saulo Guedes"></a>
+        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2gSbg1XrwTjU-n1tbXFe_-Ctlwc30Ak14sKY_OWAcS-xMU_9s-qMX90j6_3VvP-8RtszXYEaec"
+           target="_blank" rel="noopener"
+           aria-label="Agendar consulta">
+          <rect class="touch-area" x="578" y="910" width="515" height="190" rx="28"/>
+        </a>
 
-      <a class="hotspot email"
-         href="mailto:sauloguedes.psi@gmail.com?subject=Contato%20pelo%20cartão%20digital"
-         aria-label="Enviar e-mail para Saulo Guedes"></a>
+        <a href="https://www.instagram.com/saulo.psicanalista/"
+           target="_blank" rel="noopener"
+           aria-label="Abrir Instagram de Saulo Guedes">
+          <rect class="touch-area" x="61" y="1125" width="501" height="184" rx="28"/>
+        </a>
 
-      <a class="hotspot save-contact"
-         href="saulo-guedes.vcf"
-         download="Saulo_Guedes_Lima.vcf"
-         aria-label="Salvar contato de Saulo Guedes"></a>
+        <a href="mailto:sauloguedes.psi@gmail.com?subject=Contato%20pelo%20cartão%20digital"
+           aria-label="Enviar e-mail para Saulo Guedes">
+          <rect class="touch-area" x="578" y="1125" width="515" height="184" rx="28"/>
+        </a>
 
-      <button class="hotspot share" id="shareButton"
-              type="button" aria-label="Compartilhar cartão digital"></button>
+        <a href="saulo-guedes.vcf?v=5"
+           download="Saulo_Guedes_Lima.vcf"
+           aria-label="Salvar contato de Saulo Guedes">
+          <rect class="touch-area" x="61" y="1333" width="501" height="184" rx="28"/>
+        </a>
 
-      <button class="hotspot install" id="installButton"
-              type="button" aria-label="Instalar cartão como aplicativo"></button>
+        <rect id="shareButton" class="touch-area action-area"
+              x="578" y="1333" width="515" height="184" rx="28"
+              role="button" tabindex="0"
+              aria-label="Compartilhar cartão digital"/>
+
+        <rect id="installButton" class="touch-area action-area"
+              x="635" y="1768" width="459" height="148" rx="28"
+              role="button" tabindex="0"
+              aria-label="Instalar cartão como aplicativo"/>
+      </svg>
     </section>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </main>
-
-  <script src="app.js"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
